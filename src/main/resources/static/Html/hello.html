@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<p><button onclick="ajaxList();">ajaxList[GET]</button></p>
+
+<script>
+
+    function ajaxList(){
+        alert("hhhhhhhhhhhhhhh")
+
+        $.ajax({
+            type    : 'GET', // method
+            url     : 'http://localhost:8080/list',
+            async   : 'true', // true
+            processData : true,
+            contentType : 'application/json',
+            success : function(data){
+                alert("ffdfdfdfd")
+            },
+            error   : function(error){
+                alert("ffdfdfdfd23")
+                console.log("error", error);
+
+            }
+        });
+    }
+
+</script>
+
+</body>
+</html>
