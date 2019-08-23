@@ -62,7 +62,7 @@ public class SendNews {
         }
 
 
-        helper.setSubject("春蕾学员培训-新闻 + 谢云洁  "+new Date());
+        helper.setSubject(""+new Date());
         // 内容
         helper.setText(s1+"<table border=\\\"5\\\" style=\\\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;>" +
                 "<tr style=\\\"background-color: #428BCA; color:#ffffff\\\"><th>标题</th><th>作者</th><th>类型</th><th>URL</th><th>图片1</th><th>图片2</th><th>时间</th></tr>" +
